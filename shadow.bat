@@ -1,6 +1,6 @@
 @echo off
 
-# title & color
+# title and color
 title less go
 color 57
 
