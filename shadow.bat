@@ -1,6 +1,6 @@
 @echo off
 
-# title and color
+# change name
 title less go
 color 57
 
